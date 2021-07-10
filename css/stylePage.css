@@ -1,0 +1,566 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f3f3f3;
+}
+
+.overlay
+{
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.logo h2
+{
+    margin-bottom: 0;
+    color: #ffa900;
+    letter-spacing: 30px;
+    font-family: cursive;
+}
+
+/*Start NavBar*/
+
+.navbar .logo
+{
+    width: 20%;
+}
+
+.navbar .logo h2
+{
+    margin-bottom: 0;
+    color: #ffa900;
+    letter-spacing: 30px;
+    font-family: cursive;
+}
+
+.navbar .icon-search
+{
+    background-color: #ffa900 !important;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 9px;
+    width: auto;
+    text-align: center;
+    transition: all .2s ease-in-out;
+}
+
+.navbar .links li
+{
+    padding: 4px 0;
+    width: 120px;
+    transition: all .2s ease-in-out;
+}
+
+.navbar .links li a:hover
+{
+    color:#9c6a07;
+}
+
+.navbar .links li a
+{
+    font-weight: 600;
+    text-align: center;
+    color: #ffa900;
+    font-size: 18px;
+}
+
+@media (max-width: 992px)
+{
+
+    .navbar .logo
+    {
+        width: auto;
+        margin: 10px 0;
+    }
+
+    .navbar .form-search input
+    {
+        padding: 20px;
+    }
+
+    .navbar .links
+    {
+        margin-left: 0 !important;
+        margin-top: 10px;
+    }
+    
+    .navbar .links li
+    {
+        width: auto;
+        border-bottom:1px solid #FFF ; 
+    }
+}
+
+/*End NavBar*/
+
+/**Start  nav-tow*/
+
+.nav-tow
+{
+    box-shadow: none;
+    background-color: #f0f0f0;
+}
+
+.nav-tow .navbar-nav .nav-item a
+{
+    color: #444;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/*End  nav-tow*/
+
+/*Start carousel*/
+
+@media (max-width: 576px)
+{  
+    .carousel-height
+    {
+        height: 25vh;
+    }
+}
+
+@media (max-width: 767.98px)
+{
+    .carousel-height
+    {
+        height: 40vh;
+    }
+}
+
+@media (max-width: 991.98px)
+{
+    .carousel-inner
+    {
+        height: 30vh;
+    }
+}
+
+@media (min-width: 991.98px)
+{
+    .carousel-height
+    {
+        height: 100vh;
+    }
+}
+
+/*End carousel*/
+
+/*Start featured*/
+
+.featured img
+{
+    height: 350px;
+}
+
+.featured .card
+{
+    position: relative;
+}
+
+.featured .card .details
+{
+    position: absolute;
+    bottom: 0;
+    color: #333;
+    background-color: #ffa900f2;
+    width: 53%;
+    padding: 10px;
+    right: 0;
+    font-weight: bold;
+    text-align: center;
+    height: 143px;
+    font-size: 31px;
+    border-top-left-radius: 168px;
+    line-height: 141px;
+}
+
+/*End  featured*/
+
+/*Start on sale*/
+
+.on-sale 
+{
+    padding: 75px 0;
+}
+
+.on-sale .title
+{
+    color: #333;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin:25px 0;
+    font-size: 24px;
+    position: relative;
+    z-index: 2;
+}
+
+.on-sale .title::before
+{
+    content: '';
+    position: absolute;
+    width: 200px;
+    background-color: #ffa900;
+    z-index: -1;
+    height: 2px;
+    left: 28%;
+    top: 36px;
+}
+
+.on-sale .title::after
+{
+    content: '';
+    position: absolute;
+    width: 200px;
+    background-color: #ffa900;
+    z-index: -1;
+    height: 2px;
+    top: 36px;
+    right: 28%;
+}
+
+.on-sale .row>div
+{
+    margin-top: 0 !important;
+}
+
+.on-sale .card
+{
+    position: relative;
+    overflow: hidden;
+}
+
+.on-sale .card img
+{
+    height:250px;
+    border-bottom: 1px dashed  #ffa900;
+    background-color: #ffa900;
+}
+
+.on-sale .card .card-body i
+{
+    color: #ffa900;
+    font-size: 15px;
+
+}
+.on-sale .card .card-body p
+{
+    font-weight: bold;
+    margin:10px 0;
+    font-size: 20px;
+}
+
+.on-sale .card .card-body span
+{
+    font-size: 35px;
+}
+
+.on-sale .card .tools
+{
+    transition: all .2s ease-in-out;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    
+}
+
+.on-sale .card .tools a
+{
+    display: block;
+    color: #FFF;
+    background-color: #292929;
+    padding: 6px;
+    width: 45px;
+    margin: 8px 0;
+    transition: all .2s ease-in-out;
+}
+
+.on-sale .card .tools a:hover
+{
+    background-color: #9c6a07;
+}
+
+@media (max-width: 576px) {
+
+
+    .on-sale .title::before
+    {
+    content: '';
+    position: absolute;
+    width: 25%;
+    background-color: #ffa900;
+    z-index: -1;
+    height: 2px;
+    left: 12%;
+    top: 36px;
+    }
+
+    .on-sale .title::after
+    {
+    content: '';
+    position: absolute;
+    width: 25%;
+    background-color: #ffa900;
+    z-index: -1;
+    height: 2px;
+    top: 36px;
+    right: 12%;
+    }
+
+ }
+
+@media (min-width: 576px) {
+
+    .on-sale .title::before
+    {
+    content: '';
+    position: absolute;
+    width: 30%;
+    background-color: #ffa900;
+    z-index: -1;
+    height: 2px;
+    left: 12%;
+    top: 36px;
+    }
+
+    .on-sale .title::after
+    {
+    content: '';
+    position: absolute;
+    width: 30%;
+    background-color: #ffa900;
+    z-index: -1;
+    height: 2px;
+    top: 36px;
+    right: 12%;
+    }
+
+ }
+
+/*End on sale*/
+
+/*Start slogan*/
+
+.slogan .body
+{
+    font-size: 15px;
+    padding-top: 30px;
+}
+
+.slogan .body span
+{
+    font-weight: bold;
+    color: #333;
+    font-size: 20px;
+}
+
+.slogan-card
+{
+    margin:15px 0;
+}
+
+/*End slogan*/
+
+/**********************************************[Start sign up]***********************************************************************/
+
+.sign-in
+{
+    padding: 40px 0;
+    background-color: #FFF;
+    text-align: center;
+}
+
+.sign-in .logo-img img
+{
+    width: 100px;
+}
+
+.sign-in .box-sign-in
+{
+    width: 100%;
+    margin: 20px auto;
+    text-align: left;
+    padding: 0 15px;
+}
+
+.sign-in .box-sign-in .box-sign-content
+{
+    padding: 20px;
+    border:1px solid #D5D9D9;
+    border-radius: 5px;
+}
+
+.sign-in .box-sign-content .sign-header
+{
+    margin: 20px 0 20px 0;
+    font-weight: bold;
+}
+
+.sign-in .box-sign-content .agree-to
+{
+    font-size: 13px;
+    margin: 17px 0;
+}
+
+.sign-in .box-sign-content .need-help
+{
+    font-size: 13px;
+}
+
+.sign-in .box-sign-in .account-header
+{
+    font-size: 13px;
+    margin-bottom: 20px;
+    margin-top: 13px;
+    position: relative;
+}
+
+.sign-in .box-sign-in .account-header::after
+{
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 1px;
+    background-color: #dedede;
+    right:0;
+    top: 9px;
+}
+
+.sign-in .box-sign-in .account-header::before
+{
+    
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 1px;
+    background-color: #dedede;
+    left: 0;
+    top: 9px;
+}
+
+@media (max-width: 576px)
+{   
+    .sign-in .box-sign-in
+    {
+        width: 100%;
+    }
+
+    .sign-in .box-sign-in .account-header::after
+    {
+        width:60px
+    }
+
+    .sign-in .box-sign-in .account-header::before
+    {
+        width: 60px;
+    }
+}
+
+@media (min-width: 768px)
+{
+    .sign-in .box-sign-in
+    {
+        width: 50%;
+    }
+
+    .sign-in .box-sign-in .account-header::after
+    {
+        width: 90px;
+    }
+
+    .sign-in .box-sign-in .account-header::before
+    {
+        width: 90px;
+    }
+}
+
+@media (min-width:992px)
+{
+
+    .sign-in .box-sign-in .account-header::after
+    {
+        width: 120px;
+    }
+
+    .sign-in .box-sign-in .account-header::before
+    {
+        width: 120px;
+    }
+}
+
+@media (min-width:  1200px)
+{
+
+    .sign-in .box-sign-in
+    {
+        width: 40%;
+    }
+
+    .sign-in .box-sign-in .account-header::after
+    {
+        width: 120px;
+    }
+
+    .sign-in .box-sign-in .account-header::before
+    {
+        width: 120px;
+    }
+}
+
+/******************************************************[log]*****************************************************************/
+
+.view-pro .detail h2
+{
+    position: relative;
+}
+
+.view-pro .detail h2 i
+{
+    position: absolute;
+    right: 0;
+    color: #ffa900;
+}
+
+.view-pro .detail .input-select
+{
+    margin: 20px 0;
+}
+.view-pro .detail .input-select h3
+{
+    padding: 15px 0;
+    font-size: 20px;
+    position: relative;
+}
+
+.view-pro .detail .input-select h3 i
+{
+    position: absolute;
+    right: 0;
+    color: #ffa900;
+}
+
+.view-pro .detail .input-select select
+{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.view-pro .detail button
+{
+
+}
